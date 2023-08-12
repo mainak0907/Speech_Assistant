@@ -1,15 +1,42 @@
-# Speech_Assistant
-Built this Speech Assistant, which has multi-utility features like speaking out the tasks for a particular day ( Using Google Calendar API ), Taking Notes in a notepad, and Opening sites like Google, LinkedIn, and Spotify, and can be customized with additional functionality.
+# Personal Assistant Script
 
-Modules and TechStacks used -
-1. Google Calendar API (Hosted on Google Cloud)
-2.pyttsx3 (Text to Speech Conversion)
-3. pytz (For time zones)
-4. speech_recognition ( for converting voice to text )
-And other modules used by the Google API
+This is a Python script that functions as a personal assistant, capable of performing various tasks using voice commands. It interacts with the user through speech recognition and text-to-speech conversion.
 
-The assistant wakes up with the "Hello Robot" instruction and sleeps with the "Goodbye" instruction.
+## Features
 
-Although it has difficulty understanding the given instruction sometimes, because of the Indian accent, it can be improved in the future.
+- Monitors speech for wake-up command ("hello robot").
+- Retrieves and reads upcoming events from your Google Calendar.
+- Takes notes and saves them to text files.
+- Opens Google, LinkedIn, and Spotify websites upon command.
+- Responds to "goodbye" to exit the assistant.
 
-And also, hardware issues such as the microphone limits the assistant to react to the command at once.
+## Prerequisites
+
+- Python 3.x
+- Install required packages using:
+
+## Getting Started
+
+1. Clone this repository to your local machine.
+2. Set up Google Calendar API and obtain `credentials.json` file.
+3. Run the script using the command `python assistant.py`.
+
+## Usage
+
+1. Say "hello robot" to wake up the assistant.
+2. Ask about your upcoming events using phrases like "What do I have today?", "Do I have plans tomorrow?", etc.
+3. Take notes by saying "Take note" or "Write down" followed by the content.
+4. Open Google, LinkedIn, or Spotify websites by using respective commands.
+5. Say "goodbye" to exit the assistant.
+
+## Notes
+
+- Make sure you have a working microphone for speech recognition.
+- Google Calendar API requires authentication. Follow the script's instructions to set it up.
+- The assistant will respond to specific wake-up and command phrases.
+- Feel free to customize and expand the assistant's functionality as needed.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
